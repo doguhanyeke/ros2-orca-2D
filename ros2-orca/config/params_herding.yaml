@@ -1,0 +1,72 @@
+ros2_orca:
+  ros__parameters:
+    robot_initial_positions: [
+      -8.0, -7.5,
+      -8.0, -9.0,
+      -8.0, -11.0,
+      ]
+    goal_positions: [
+      10.0, 10.0,
+      10.0, 12.0,
+      10.0, 14.0,
+    ]
+    obstacle_positions: [
+      -3, -1, 1,
+      -3, -1, 3,
+      -3, -1, 5,
+      -3, -1, 7,
+      -2, 1, 1,
+      -2, 1, 3,
+      -2, 1, 5,
+      -2, 1, 7,
+      -1, 3, 1,
+      -1, 3, 3,
+      -1, 3, 5,
+      -1, 3, 7,
+      0, 5, 1,
+      0, 5, 3,
+      0, 5, 5,
+      0, 5, 7]
+    time_step: 1.0
+    num_robots: 3
+    radius: 1.5
+    deadlockOccurs: 10
+    deadlock_threshold: 0.0001
+    maxCycle: 2500
+    neighborDist: 1.5
+    maxNeighbors: 10
+    timeHorizon: 1.0
+    timeHorizonObst: 1.0
+    maxSpeed: 10.0
+    # random attack parameters
+    randomAttackStart: 0
+    randomAttackEnd: 231
+    attackerIds: "1"
+    numOfFalseMessages: 10
+    positionMax: 5
+    velocityMax: 2.5
+    timeMin: 0
+    timeMax: 100
+    # falsification parameters
+    minPosChange: -5.0
+    maxPosChange: 5.0
+    minVelChange: -2.5
+    maxVelChange: 2.5
+    victimRobotId: 2
+    attackedRobotId: 2
+    deadlockTimestep: 10
+    deadlockPosChange: 0.01
+    attackType: 1
+    numberOfFalseMessage: 10
+    falsificationRuns: 1
+    falsificationIterations: 1000
+    totalTimeStep: 230.50
+    delayConstant: 2
+    pointX: 7
+    pointY: 6
+    pointZ: 5
+    benign_run: 1
+
+RVO3D:
+  ros__parameters:
+    obstacle_positions_path: "/home/eastwest/dorca_ws/test_bed/work/ros2_ws/src/RVO2-3D/examples/obstacle_positions.txt"

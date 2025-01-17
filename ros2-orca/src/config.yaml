@@ -1,0 +1,45 @@
+time_step : 0.1
+num_robots : 3
+radius : 3.0
+
+deadlockOccurs : 10
+deadlock_threshold : 0.0001
+
+maxCycle : 2500
+
+neighborDist : 15.0
+maxNeighbors : 10
+timeHorizon : 5.0
+timeHorizonObst : 5.0
+maxSpeed : 2.5
+
+# random attack parameters
+randomAttackStart : 0
+randomAttackEnd : 231
+attackerIds : "1"
+numOfFalseMessages : 10
+positionMax : 5
+velocityMax : 2.5
+timeMin : 0
+timeMax : 100
+
+# falsification parameters
+minPosChange : -5.0
+maxPosChange : 5.0
+minVelChange : -2.5
+maxVelChange : 2.5
+victimRobotId : 2
+attackedRobotId : 1
+deadlockTimestep : 10
+deadlockPosChange : 0.01
+attackType : 1
+numberOfFalseMessage : 10
+falsificationRuns : 1
+falsificationIterations : 1000
+totalTimeStep : 230.50
+delayConstant : 2
+pointX : 7
+pointY : 6
+pointZ : 5
+
+benign_run : 1
